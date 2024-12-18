@@ -1,5 +1,5 @@
 input StudentRequest{
     name:String
     email:String
-    date_naissance:String
+    datenaissance:String
 }

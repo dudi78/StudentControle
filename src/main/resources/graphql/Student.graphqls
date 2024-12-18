@@ -2,5 +2,5 @@ type Student{
 
     name:String
     email :String
-    date_naissance:String
+    datenaissance:String
 }

@@ -11,13 +11,13 @@ public class StudentMapper {
 
     private final ModelMapper Studentmapper = new ModelMapper();
 
-    public StudentDto FromAvionToAvionDto(Student student){
+    public StudentDto FromStudentToStudentDto(Student student){
 
         return Studentmapper.map(student,StudentDto.class);
     }
 
 
-    public  Student FromAvionDtoToAvion(  StudentDto studentDto){
+    public  Student FromStudentDtoToStudent(  StudentDto studentDto){
 
         return Studentmapper.map(studentDto,Student.class);
     }

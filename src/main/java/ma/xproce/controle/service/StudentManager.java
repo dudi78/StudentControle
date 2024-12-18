@@ -19,7 +19,7 @@ public class StudentManager  implements StudentService{
     @Override
     public StudentDto GetStudentByDatenaissance(Date datenaiss) {
 
-      return  mapper.FromAvionToAvionDto( studentRepository.findByDatenaissance(datenaiss));
+      return  mapper.FromStudentToStudentDto( studentRepository.findByDatenaissance(datenaiss));
 
 
 
@@ -29,7 +29,7 @@ public class StudentManager  implements StudentService{
     public StudentDto SaveStudent(StudentDto studentDto) {
 
 
-      return mapper.FromAvionToAvionDto( studentRepository.save(mapper.FromAvionDtoToAvion(studentDto)));
+      return mapper.FromStudentToStudentDto( studentRepository.save(mapper.FromStudentDtoToStudent(studentDto)));
     }
 
 
