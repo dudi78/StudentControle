@@ -17,8 +17,8 @@ public class StudentController {
     StudentService studentService;
 
     @QueryMapping
-    public StudentDto getStudentByDateNaissance(@Argument Date datenaiss){
-        return studentService.GetStudentByDatenaissance(datenaiss);
+    public StudentDto getStudentByDateNaissance(@Argument Date dateNaiss){
+        return studentService.GetStudentByDatenaissance(dateNaiss);
     }
     @MutationMapping
     public StudentDto saveStudent(@Argument StudentDto studentDto){
